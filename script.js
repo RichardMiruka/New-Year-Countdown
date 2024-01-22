@@ -3,7 +3,7 @@ let hoursb = document.querySelector("#hours")
 let minutesb = document.querySelector("#minutes")
 let secondsb = document.querySelector("#seconds")
 
-let NewYearDate = new Date(2024, 0, 1, 00, 00)
+let NewYearDate = new Date(2025, 0, 1, 00, 00)
 let endTime = NewYearDate.getTime()
 
 const countdown = () => {
