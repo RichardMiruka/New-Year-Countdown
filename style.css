@@ -54,6 +54,7 @@ body {
 .countdown {
     width: 95vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 10px;
 }
@@ -104,3 +105,35 @@ span.text {
     border-radius: 0.3em;
     box-shadow: var(--color-shadow);
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .heading h1 {
+        font-size: 4em;
+    }
+
+    .heading h3 {
+        font-size: 2rem;
+    }
+
+    .countdown {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80vw;
+        height: 25vmin;
+        margin-bottom: 20px;
+    }
+
+    span.num {
+        font-size: 3em;
+    }
+
+    span.text {
+        font-size: 0.8em;
+    }
+}
+
+
